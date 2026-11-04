@@ -1,12 +1,22 @@
-# Life in Grey — Between Acts
+# Life in Grey
 
-An interactive black-and-white voxel circus diorama.
+## Five Minutes to Showtime
 
-- ChatGPT-hosted play: https://life-in-grey.achallakiran.chatgpt.site
+A monochrome voxel point-and-click silent-comedy adventure. Retrieve the missing hat from the circus wagon, recover from a few mishaps, and make an entrance.
+
+- Play on ChatGPT hosting: https://life-in-grey.achallakiran.chatgpt.site
 - GitHub Pages: https://achallakiran.github.io/life-in-grey/
 
-Use landscape orientation on phones. Tap the ground to walk; tap the bowler, cane, ballet performer, bucket, white costume or trunk to discover six animated moments. Drag to adjust the view; use + / − to zoom. Music is optional.
+Tap the ground to walk and objects to interact. The pocket appears when you collect an item; select the item and tap where to use it. Only pause and the contextual pocket are shown during gameplay. Turn phones to landscape.
 
-The self-contained `index.html` also works offline in a browser without a server or CDN. HTML attachment previews may show text without executing the 3D scene; use the hosted page for mobile play.
+The title menu includes Continue, New Game, Chapters, Settings and Credits. Progress saves at puzzle checkpoints in the current browser. Settings include music/effects volume, mute, graphics quality, grain, vignette, optional flicker, reduced motion, interaction feedback and intertitle size. Flicker is off by default. The accompaniment uses original phrases and offline synthesized piano samples.
 
-The Pages workflow automatically publishes changes to main. Character likeness is a stylised first pass of the supplied photographic references. Three.js is included under its MIT license, retained in the HTML bundle.
+Character experiments remain separate at `studio.html` and `character-study.html`. The main game does not show modelling sliders or diagnostics.
+
+## Offline and development
+
+`index.html` embeds the engine and scene and can be saved and opened offline without a CDN or server. A software renderer is available if WebGL cannot start; its visual detail and performance differ from hardware rendering.
+
+Editable source is in `src/`. Install the pinned dependencies with `npm install`, then run `npm run build`. GitHub Pages publishes the main branch through Actions.
+
+Three.js is included under its MIT license, retained in the HTML bundle.
